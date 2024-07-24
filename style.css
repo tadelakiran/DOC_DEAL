@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+.harsAllTopDoctors {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    background: linear-gradient(to bottom, #f2f8ff, #a2d2ff);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.harshDoctor {
+    width: 60%;
+    height: 25%;
+    border-radius: 20px;
+    border: 1px solid rgb(12, 0, 0);
+    background: linear-gradient(to top left, white, rgb(149, 169, 180));
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 10px rgb(52, 133, 200);
+    transition: all 0.5s;
+}
+
+.harshDoctor:hover {
+    transform: scale(1.02); /* Change scale to transform */
+}
+
+.harshTopDoctors_heading {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: cursive;
+    color: #200E3A; /* Correct color code */
+    padding-top: 50px;
+}
+
+.harshTopDoc_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: white;
+    border: none;
+    background-color: red;
+}
+
+@media screen and (max-width: 770px) {
+    .harshDoctor {
+        width: 90%;
+        align-items: start;
+        height: 20%;
+    }
+
+    .harshTopDoc_image {
+        width: 100px; 
+        height: 100px;
+        margin-top: 10px;
+    }
+
+    .harshTopDoc_details p {
+        font-size: 15px;
+    }
+    .div_2
+    {
+        width: 60%;
+    }
+}
+@media (max-width:430px) {
+    .harshTopDoc_details p {
+        font-size: 12px;
+    }
+    .harshDoc_consult button
+    {
+        width: 50px;
+        font-size: 15px;
+        height: 25px !important;
+        margin-top: 30px;
+    }
+    .div_2
+    {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+@media (max-width:330px) {
+    .harshTopDoc_details p {
+        font-size: 12px;
+    }
+    .harshDoc_consult button
+    {
+        width: 50px;
+        font-size: 15px;
+        height: 20px !important;
+        margin-top: 40px;
+    }
+    .div_2
+    {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.harshTopDoc_details {
+    width:70%; /* Added px unit */
+    height: 80%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* line-height: 20px; */
+    /* align-items: center; */
+    text-align: justify;
+    color: rgb(108, 101, 101);
+    border-radius: 20px;
+    /* padding: 30px; */
+}
+
+.harshDoc_speality {
+    color: rgb(14, 153, 212);
+}
+
+.div_2 {
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.harshDoc_rating {
+    display: flex;
+    height: 40px;
+    width: 150px;
+    color: rgb(6, 171, 6);
+}
+
+.rating_consult_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+
+.harshDoc_consult button {
+    background-color: rgb(123, 185, 211);
+    width: 120px;
+   height: 40px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+}
+
+.harshDoc_consult button:hover {
+    transform: scale(1.09); /* Change scale to transform */
+}
+
+#s_container {
+    width: 100%;
+    height: 95vh;
+}
+
+#s_nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #f2f8ff, #a2d2ff);
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+
+.s_bars {
+    display: none;
+    width: 50px;
+    height: 100%;
+    font-size: 32px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.options_container {
+    width: 150px;
+    height: 90vh;
+    background-color: skyblue;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    display: none;
+    transition: width 0.5s ease-in-out;
+}
+
+.options {
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: 150px;
+}
+
+.child {
+    width: 150px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    position: absolute;
+}
+
+.child div:hover {
+    text-shadow: 0px 0px 10px white;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+#s_inner_nav {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#s_logo {
+    width: 70px;
+    height: 100%;
+    display: flex;
+}
+
+#s_logo_icon {
+    width: 25px;
+    height: 100%;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 9px;
+}
+
+#s_logo_02 {
+    width: 25px;
+    height: 100%;
+    color: blue;
+    font-size: 25px;
+    font-family: cursive;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 17px;
+}
+
+#s_logo_03 {
+    width: 25px;
+    height: 100%;
+    color: blue;
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+#s_options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#home, #services, #aboutUs {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#mybooks {
+    width: 140px;
+    height: 45px;
+    background-color: white;
+    border-radius: 25px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#mybooks:hover {
+    color: white;
+    background-color: red;
+    box-shadow: 0px 0px 2px 2px red;
+}
+
+#profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid red;
+    cursor: pointer;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutUs:hover, #services:hover, #home:hover {
+    color: blue;
+}
+
+#s_home {
+    width: 100%;
+    min-height: 85vh;
+    height: 100%;
+    display: flex;
+    padding-top: 70px;
+}
+
+#s_home_11 {
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(to bottom, #f2f8ff, #a2d2ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#s_home_22 {
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(to bottom, #f2f8ff, #a2d2ff);
+    background-image: url(./doctors11.avif);
+    background-size: 100% 100%;
+    background-color: blue;
+}
+
+#s_heading {
+    width: 80%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#s_s_heading {
+    width: 70%;
+    height: 50px;
+    color: rgb(24, 4, 244);
+    font-weight: bold;
+    font-size: 22px;
+    font-family: cursive;
+}
+
+#s_title {
+    width: 70%;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+#s_consult {
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 25px;
+    background-color: rgb(98, 184, 219);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 770px) {
+    #home, #services, #aboutUs {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    #mybooks {
+        width: 100px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    #s_home {
+        flex-direction: column;
+    }
+
+    #s_home_11, #s_home_22 {
+        width: 100%;
+    }
+
+    #s_heading {
+        height: fit-content;
+    }
+
+    #s_s_heading {
+        height: 30px;
+        width: 75%;
+        font-size: 15px;
+    }
+
+    #s_title {
+        font-size: 30px;
+    }
+
+    #s_options {
+        display: none;
+    }
+
+    .s_bars {
+        display: block;
+    }
+}
+
+@media (max-width: 380px) {
+    #s_title {
+        font-size: 20px;
+    }
+
+    #s_s_heading {
+        height: 30px;
+        width: 85%;
+        font-size: 15px;
+    }
+}
+
+#s_footer {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+}
+
+.svgs {
+    font-size: 50px;
+    z-index: -10;
+}
+
+#s_inner_footer {
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: -300px;
+    z-index: -999;
+}
+
+@media screen and (max-width: 900px) {
+    #s_inner_footer {
+        width: 98.6vw;
+        height: 1000px;
+        position: absolute;
+        top: -200px;
+    }
+}

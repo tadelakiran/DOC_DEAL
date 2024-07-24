@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 97svh;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jpars,
+.jparent {
+    height: 80%;
+    width: 85%;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+.jithu,
+.jitya {
+    background-color: white;
+    height: 90%;
+    width: 45%;
+    border-radius: 10px;
+}
+
+.jithu {
+    background-image: url(./sign.svg);
+    background-size: 100% 100%;
+    opacity: 0; 
+    transform: scale(0.95);  
+    animation-name: signin-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+    display: block;  
+}
+
+@keyframes signin-animation {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.jitya {
+    background-image: url(./undraw_medicine_b-1-ol.svg);
+    background-size: 100% 100%;
+    opacity: 0; 
+    transform: scale(0.95);  
+    animation-name: signin-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+    display: block;  
+}
+
+.jithu1,
+.jitya1 {
+    background-color: white;
+    height: 100%;
+    width: 35%;
+    box-shadow: 3px 5px 20px 2px #816ec3;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+}
+
+.j_heading,
+.Login_heading {
+    font-family: cursive;
+}
+
+@media screen and (max-width: 900px) {
+    .jithu,
+    .jitya {
+        display: none;
+    }
+    .jpars,
+    .jparent {
+        justify-content: center;
+    }
+    .jithu1,
+    .jitya1 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ip1,
+    .i1 {
+        width: 200px;
+    }
+    .jithu1,
+    .jitya1 {
+        width: 90%;
+    }
+}
+
+.ip1,
+.i1 {
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.john1,
+.jj1 {
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jbutton1,
+.button1 {
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    border-radius: 25px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6C63FF;
+}
+
+.jbutton1:hover,
+.button1:hover {
+    background-color: #2e25d6;
+}
+
+.jone {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 90%;
+    height: 60%;
+}
+
+.jj1 {
+    line-height: 20px;
+}
+
+#jj1 {
+    cursor: pointer;
+}

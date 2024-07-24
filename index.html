@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./signin.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="jpars">
+        <div class="jithu"></div>
+        <div class="jithu1">
+            <div>
+                <div style="position: relative;">
+                    <div id="s_inner_nav" style="position: absolute; top:5px ;left:-170px;">
+                        <div id="s_logo">
+                            <div id="s_logo_icon"><i class="fa-solid fa-heart-pulse" style="color: #e60f0f;"></i></div>
+                            <div id="s_logo_03">D</div>
+                            <div id="s_logo_02">oc eal</div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="jhead">
+                <h1 class="j_heading">Sign Up</h1>
+            </div>
+            <div class="john1">
+                <input type="text" class="ip1" id="name" placeholder="User Name">
+            </div>
+            <div class="john1">
+                <input type="password" class="ip1" id="pass" placeholder="Create Password">
+            </div>
+            <div class="john1">
+                <input type="password" class="ip1" id="conf_pass" placeholder="Confirm Password">
+            </div>
+            <div class="john1">
+                <input type="number" class="ip1" placeholder="Phone Number">
+            </div>
+            <div class="john1">
+                <button class="jbutton1" onclick="checkData('register')">Sign Up</button>
+            </div>
+            <div class="john1">
+                <button class="jbutton1" onclick="toggleForms()">Log in</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="jparent">
+        <div class="jitya"></div>
+        <div class="jitya1">
+            <div class="jone">
+                <div style="position: relative;">
+                    <div id="s_inner_nav" style="position: absolute; top:-80px ;left:-180px;">
+                        <div id="s_logo">
+                            <div id="s_logo_icon"><i class="fa-solid fa-heart-pulse" style="color: #e60f0f;"></i></div>
+                            <div id="s_logo_03">D</div>
+                            <div id="s_logo_02">oc eal</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jhead">
+                    <h1 class="Login_heading">Login</h1>
+                </div>
+                <div class="jj1">
+                    <input type="text" class="i1" id="username" placeholder="User Name">
+                </div>
+                <div class="jj1">
+                    <input type="password" class="i1" id="password" placeholder="Password">
+                </div>
+                <div class="jj1" id="jj1">
+                    <button class="button1" onclick="checkData('login')">LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
