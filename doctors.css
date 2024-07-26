@@ -1,0 +1,238 @@
+.luba_parent{
+    width: 100%;
+    height: 97svh;
+    display: flex;
+    background:#1E2858;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.l_heading{
+    height: 10%;
+    width: 60%;
+    /* border: 2px solid black; */
+    color: #F5744C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+@media screen and (max-width:390px){
+    .l_heading{
+        font-size: 22px;
+}
+}
+@media screen and (max-width:700px){
+    .l_heading{
+        font-size: 32px;
+}
+}
+.luba1{
+    height: 20%;
+    width: 50%;
+    /* border: 2px solid black; */
+    background-color: #FFFFFF;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-left: 30px;
+}
+.l_img{
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: white;
+}
+@media screen and (max-width:700px) {
+    .luba1 {
+        width: 90%;
+        align-items: start;
+    }
+
+    .l_img {
+        width: 150px;
+
+    }
+
+    .luba1{
+        height: 20%;
+    }
+
+    .l_details p{
+        font-size: 12px;
+    }
+   
+}
+.l_details{
+    height: 80%;
+    width: 30%;
+    /* border:2px solid black ; */
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+@media screen and (max-width:700px){
+    .l_details{
+        height: 60%;
+        width: 30%;
+        
+    }
+    .l_button{
+         width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width:1200px){
+    .l_details{
+        height: 60%;
+        font-size:15px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+}
+.l_name{
+    height: 100%;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 600;
+    /* border: 2px solid black; */
+}
+@media screen and (max-width:390px){
+    .l_name{
+        font-size: 11px;
+}
+}
+@media screen and (max-width:700px){
+    .l_name{
+        font-size: 15px;
+}
+}
+.l_qualification{
+    height: 20%;
+    width: 80%;
+    color:rgb(115, 112, 112);
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+@media screen and (max-width:390px){
+    .l_qualification{
+        font-size: 10px;
+}
+}
+@media screen and (max-width:700px){
+    .l_qualification{
+        font-size: 12px;
+}
+}
+.l_prof{
+    height: 20%;
+    width: 80%;
+    /* border: 2px solid black; */
+}
+@media screen and (max-width:390px){
+    .l_prof{
+        font-size: 10px;
+}
+}
+@media screen and (max-width:700px){
+    .l_prof{
+        font-size: 12px;
+}
+}
+.l_exp{
+    height: 20%;
+    width: 80%;
+    font-size: 18px;
+    color:#178079;
+    /* border: 2px solid black; */
+}
+@media screen and (max-width:390px){
+    .l_exp{
+        font-size: 11px;
+}
+}
+@media screen and (max-width:700px){
+    .l_exp{
+        font-size: 14px;
+}
+}
+.l_last{
+    height: 80%;
+    width: 30%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+@media screen and (max-width:390px){
+    .l_last{
+        flex-direction: column;
+}
+}
+.l_price{
+    height: 80%;
+    width: 10%;
+    /* border: 2px solid black; */
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-decoration:line-through;
+    text-decoration-color: red; */
+    font-size: 20px;
+    font-weight: 700;
+}
+@media screen and (max-width:700px){
+    .l_price{
+        font-size: 15px;
+}
+}
+.l_p1{
+    display: flex;
+    /* flex-direction: column; */
+    color: gray;
+    align-items: center;
+    justify-content: center;
+    text-decoration:line-through;
+    text-decoration-color: red;
+}
+.l_button{
+    background-color:#F5744C;
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    border:none;
+    margin-left: 15px;
+}
+.l_button:hover{
+    scale: 1.09;
+}
+@media screen and (max-width:390px){
+    .l_button{
+        height: 20px;
+        width:60% ;
+        font-size: 9px;
+}
+}
+@media screen and (max-width:700px){
+    .l_button{
+        height: 30px;
+        width: 60%;
+        font-size: 11px;
+}
+}
+

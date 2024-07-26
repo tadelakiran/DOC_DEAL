@@ -80,3 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
     logins.style.display = "none";
     signup.style.display = "flex";
 });
+
+
+

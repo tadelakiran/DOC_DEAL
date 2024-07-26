@@ -1,0 +1,354 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#aboutUs_main {
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(to top right, rgb(187, 205, 220), rgb(6, 67, 91));
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon_block1_aboutUs
+{
+    border: none !important;
+}
+ .block5_part2_aboutUs
+{
+    border: none !important;
+}
+
+.part1_AboutUs {
+    width: 50%;
+    /* height: 70svh; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.part2_AboutUs {
+    width: 50%;
+    /* height: 70svh; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading_part1_about {
+    width: 100%;
+    height: fit-content;
+    color: rgb(2, 6, 7);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    margin: 10px;
+    font-size: 32px;
+
+}
+
+.paragraph_part1_about {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service_part1_about {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 15px
+}
+
+.services_aboutUs {
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.icon_service_aboutUs {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name_service_aboutUS {
+    font-weight: 900;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.div_part2_aboutUs {
+    width: 400px;
+    height: 400px;
+    border-radius: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.block1_part2_aboutUs,
+.block2_part2_aboutUs,
+.block3_part2_aboutUs,
+.block4_part2_aboutUs {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.block5_part2_aboutUs {
+    width: 130px;
+    height: 130px;
+    border: 1px solid black;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.block1_part2_aboutUs {
+    top: 0;
+    right: 0;
+
+
+}
+
+.block2_part2_aboutUs {
+    top: 0;
+    left: 0;
+
+}
+
+.block3_part2_aboutUs {
+    bottom: 0;
+
+    right: 0;
+}
+
+.block4_part2_aboutUs {
+    bottom: 0;
+    left: 0;
+
+}
+
+.icon_block1_aboutUs {
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(4, 3, 3);
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.name_block1_aboutUs {
+    width: 100%;
+    height: 20%;
+    border: 2px solid black;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:800px) {
+
+    .part1_AboutUs,
+    .part2_AboutUs {
+        width: 50%;
+        height: 75svh;
+
+    }
+
+    .heading_part1_about {
+        width: 100%;
+        font-weight: 600;
+        font-size: 25px;
+
+    }
+
+    .paragraph_part1_about {
+        font-size: 18px;
+    }
+
+    .services_aboutUs {
+        width: 120px;
+        height: 40px;
+        border: 2px solid black;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .icon_service_aboutUs {
+        width: 30px;
+        font-size: 25;
+    }
+
+    .name_service_aboutUS {
+
+        font-size: 13px;
+
+    }
+
+    .div_part2_aboutUs {
+        width: 300px;
+        height: 300px;
+    }
+
+    .block1_part2_aboutUs,
+    .block2_part2_aboutUs,
+    .block3_part2_aboutUs,
+    .block4_part2_aboutUs {
+        width: 130px;
+        height: 130px;
+    }
+
+    .block5_part2_aboutUs {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.services_aboutUs:hover {
+    background-color: black;
+    color: white;
+
+}
+@media (max-width:380px){
+   .part2_AboutUs
+   {
+    display: none;
+   }
+}
+@media (max-width:430px)
+{
+    .part1_AboutUs
+    {
+        width: 100%;
+    }
+    .part2_AboutUs
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:400px) {
+    #aboutUs_main {
+        background-color: red;
+    }
+
+    .part1_AboutUs,
+    .part2_AboutUs {
+        width: 50%;
+        height: 70svh;
+
+    }
+    .heading_part1_about {
+        font-size: 18px;
+
+    }
+    .paragraph_part1_about {
+        font-size: 12px;
+    }
+
+    .services_aboutUs {
+        width: 100px;
+        height: 30px;}
+        .icon_service_aboutUs {
+            width: 25px;
+            font-size: 20;}
+            .name_service_aboutUS {
+
+                font-size: 8px;
+        
+            }
+            .div_part2_aboutUs {
+                width: 200px;
+                height: 200px;
+
+            }
+            .block_part2_aboutUs{
+                width: 3 00px;
+                height: 200px;
+            }
+         
+    .block3_part2_aboutUs,.block1_part2_aboutUs,.block_part2_aboutUs,
+    .block4_part2_aboutUs,.block5_part2_aboutUs {
+        display: none;
+    }
+    
+}
+
+@media (max-width:770px) {
+    .heading_part1_about
+    {
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .paragraph_part1_about
+    {
+        font-size: 15px;
+    }
+    .div_part2_aboutUs
+    {
+        width: 300px;
+        /* margin-left: 0px; */
+    }
+    .part2_AboutUs{
+        width: 50%;
+    }
+    .icon_service_aboutUs
+    {
+        font-size: 20px;
+    }
+}
+.paragraph_part2_about
+{
+    display: none;
+}
+@media (max-width:430px)
+{
+.block5_part2_aboutUs,
+.icon_block1_aboutUs
+{
+    display: none;
+}
+}
+
+@media (max-width : 380px)
+{
+  .paragraph_part2_about
+  {
+    display: block;
+     color: white;
+  }
+  .paragraph_part1_about
+  {
+    display: none;
+  }
+  .part1_AboutUs
+  {
+    width: 100%;
+  }
+}

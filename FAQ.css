@@ -6,6 +6,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    overflow: hidden;
+padding-bottom: 50px;
 }
 
 .faq_heading_harsh {
@@ -22,10 +24,6 @@
 
 }
 
-.faquestion_icon_harsh:hover {
-    transform: scale(0.9);
-}
-
 .faqdiv_harsh {
     width: 80%;
     height: fit-content;
@@ -39,7 +37,7 @@
 .faqdiv_parts {
     width: 500px;
     height: 110px;
-
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,6 +46,7 @@
 .faquestion_icon_harsh {
     width: 90%;
     height: 90px;
+    position: absolute;
     background-color: black;
     border-radius: 30px;
     color: rgb(12, 75, 138);
@@ -55,6 +54,7 @@
     display: flex;
     font-weight: 600;
     align-items: center;
+
     background: linear-gradient(to top left, white, rgb(149, 183, 202));
 }
 
@@ -68,6 +68,8 @@
     align-items: center;
     justify-content: center;
     font-size: 32px;
+    animation-name: icon_faq1_animine;
+    animation-duration: 1s;
     background: linear-gradient(to bottom, #f2f8ff, #a2d2ff);
 }
 
@@ -76,9 +78,11 @@
     height: 100%;
     font-size: 20px;
     display: flex;
+    position: absolute;
     margin-left: 10px;
     align-items: center;
     position: relative;
+    
 
 }
 
@@ -92,6 +96,7 @@
     padding: 10px;
     top: 80%;
     text-align: center;
+
     z-index: 9;
     background: linear-gradient(to bottom, #a0bddf, #075298);
 }
@@ -99,7 +104,6 @@
 .question_harsh:hover {
     .faq_answer_harsh {
         display: block;
-        /* z-index: 99; */
     }
 }
 
@@ -111,5 +115,79 @@
     .question_harsh {
         font-size: 16px;
 
+    }
+}
+
+.FAQ_harsh:hover .faq1_harsh {
+    left: 0;
+    animation-name: question_odd_move;
+    animation-duration: 0.5s;
+    
+}
+
+.FAQ_harsh:hover .faq3_harsh {
+    left: 0;
+    animation-name: question_odd_move;
+    animation-duration: 1.5s;
+}
+
+.FAQ_harsh:hover .faq5_harsh {
+    left: 0;
+    animation-name: question_odd_move;
+    animation-duration: 2.5s;
+}
+
+.FAQ_harsh:hover .faq7_harsh {
+    left: 0;
+    animation-name: question_odd_move;
+    animation-duration: 3.5s;
+}
+
+.FAQ_harsh:hover .faq2_harsh {
+    right: 0;
+    animation-name: question_even_move;
+    animation-duration: 1s;
+   
+}
+
+.FAQ_harsh:hover .faq4_harsh {
+    right: 0;
+    animation-name: question_even_move;
+    animation-duration: 2s;
+}
+
+.FAQ_harsh:hover .faq6_harsh {
+    right: 0;
+    animation-name: question_even_move;
+    animation-duration: 3s;
+}
+
+.FAQ_harsh:hover .faq8_harsh {
+    right: 0;
+    animation-name: question_even_move;
+    animation-duration: 4s;
+}
+
+@keyframes question_odd_move {
+    0% {
+        left: -150%;
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        left: 0;
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes question_even_move {
+    0% {
+        right: -150%;
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        right: 0;
+        transform: rotateX(360deg);
     }
 }
