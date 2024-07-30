@@ -6,6 +6,7 @@
 #aboutUs_main {
     width: 100%;
     height: fit-content;
+    padding: 30px 0px;
     background: linear-gradient(to top right, rgb(187, 205, 220), rgb(6, 67, 91));
     display: flex;
     align-items: center;
@@ -21,9 +22,10 @@
 }
 
 .part1_AboutUs {
-    width: 50%;
+    width: 45%;
     /* height: 70svh; */
     padding: 10px;
+    padding-left: 50px ;
     display: flex;
     flex-direction: column;
     justify-content: center;

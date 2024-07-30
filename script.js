@@ -12,29 +12,46 @@ function toggleForms() {
     }
 }
 
+var users = []
+
 function checkData(action) {
     if (action === 'register') {
-        const reg_x = document.getElementById("name");
-        const reg_y = document.getElementById("pass");
-        const reg_conf_y = document.getElementById("conf_pass");
-        reg_user = reg_x.value;
-        reg_pass = reg_y.value;
-        const reg_conf_pass = reg_conf_y.value;
+        const reg_x = document.getElementById("name").value;
+        const reg_y = document.getElementById("pass").value;
+        const reg_conf_y = document.getElementById("conf_pass").value;
+        const moblieno = document.getElementById("mobileno").value;
+        const email = document.getElementById("mailid").value;
 
-        if (!reg_user || !reg_pass || !reg_conf_pass) {
+        if (!reg_x || !reg_y || !reg_conf_y || !moblieno || !email) {
             alert('Please fill in all fields.');
             return;
         }
 
-        if (reg_pass !== reg_conf_pass) {
+        else if (reg_y !== reg_conf_y) {
             alert('Passwords do not match.');
             return;
+        }else{
+            let newuser = {
+                name:reg_x,
+                pass:reg_y,
+                moblieno:moblieno,
+                email:email
+            }
+
+            var database = JSON.parse(localStorage.getItem('users'))
+            if(database){
+                {database.map((ele)=>{
+                    users.push(ele)
+                })}
+            }
+
+            users.push(newuser)
+
+            localStorage.setItem('users',JSON.stringify(users))
         }
 
         alert("Registration Success");
-        reg_x.value = "";
-        reg_y.value = "";
-        reg_conf_y.value = "";
+        window.location.reload()
 
     } else if (action === 'login') {
         const x = document.getElementById("username");
@@ -47,31 +64,20 @@ function checkData(action) {
             return;
         }
 
-        const adminAccounts = [
-            { admin: "sai", adminpass: "123" },
-            { admin: "dinesh", adminpass: "3515" }
-        ];
-
-        if (login_user === reg_user) {
-            if (login_pass === reg_pass) {
-                alert("Login Success");
-                window.location.href = "home.html";
-            } else {
-                alert("Incorrect Password");
+        var logincheck = JSON.parse(localStorage.getItem('users'))
+        var c = 0
+        for(let i=0; i<logincheck.length;i++){
+            if(logincheck[i].name===login_user && logincheck[i].pass===login_pass){
+                alert(`welcome ${login_user}`)
+                localStorage.setItem('loginuser',JSON.stringify(logincheck[i]))
+                window.location.href="home.html"
+                c+=1
+                break
             }
-        } else {
-            let adminLoggedIn = false;
-            for (const adminAccount of adminAccounts) {
-                if (login_user === adminAccount.admin && login_pass === adminAccount.adminpass) {
-                    alert("Admin Logged In");
-                    window.location.href = "home.html";
-                    adminLoggedIn = true;
-                    break;
-                }
-            }
-            if (!adminLoggedIn) {
-                alert("Login Failed");
-            }
+        }
+        if(c===0){
+            alert('Login Failed')
+            window.location.reload()
         }
     }
 }

@@ -1,0 +1,291 @@
+* {
+    font-family: cursive;
+}
+
+#animation_div_main {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgb(94, 252, 232) 10%, rgb(115, 110, 254) 100%);
+    margin-top: 50px;
+}
+
+.part1_headings_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.animation_part1_main,
+.animation_part2_main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.animation_part2_main {
+    position: relative;
+    height: 100%;
+    width: 500px;
+}
+
+.animation_part1_main {
+    height: 100%;
+    width: 600px;
+    position: relative;
+}
+
+.circlediv_part2 {
+    width: 500px;
+    height: 500px;
+    aspect-ratio: 3/2;
+    border-radius: 500px;
+    position: relative;
+
+}
+
+.names_animation {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    z-index: 9;
+    animation-name: names_animation;
+}
+
+.part1_headings_div {}
+
+.picturediv_part2 {
+    width: 400px;
+    height: 70%;
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    animation: girl_doctor;
+    animation-duration: 2s;
+    overflow: hidden;  
+}
+
+.name1_animine {
+    top: 0;
+    left: -15%;
+    animation-duration: 5s;
+    border: none;
+}
+
+.name2_animine {
+    top: 0;
+    right: -15%;
+    border: none;
+    animation-duration: 6s;
+}
+
+.name3_animine {
+    bottom: 0;
+    left: -15%;
+    animation-duration: 7s;
+}
+
+.name4_animine {
+    bottom: 0;
+    right: -15%;
+    animation-duration: 8s;
+}
+
+@keyframes girl_doctor {
+    0% {
+        right: -50%;
+    }
+
+    100% {
+
+        right: 15%;
+    }
+}
+
+@keyframes names_animation {
+    0% {
+        display: none;
+    }
+
+    50% {
+        display: none;
+    }
+
+
+    100% {
+        display: block;
+    }
+
+}
+
+@keyframes homePage_headin1_animation {
+
+    0% {
+        color: transparent;
+        text-shadow: none;
+    }
+
+    50% {
+        color: transparent;
+        text-shadow: none;
+    }
+
+    100% {
+        /* color: rgb(100, 154, 199); */
+        color: rgb(255, 132, 0);
+
+        text-shadow: 2px 2px 2px rgb(10, 12, 12);
+    }
+
+
+}
+
+/* button #openForm {
+    border: 2px solid red !important;
+} */
+.mainheading_homepage {
+
+    width: 70%;
+    height: fit-content;
+    top: 15%;
+    font-size: 40px;
+    color: rgb(255, 132, 0);
+    text-align: center;
+    left: 15%;
+    font-weight: 900;
+    /* text-shadow: 2px 2px 2px rgb(10, 12, 12); */
+    animation-name: homePage_headin1_animation;
+    animation-duration: 1s;
+}
+
+.quotation_homepage {
+    width: 90%;
+    height: fit-content;
+    color: rgb(181, 37, 37);
+    font-weight: 900;
+    margin-top: 30px;
+    top: 35%;
+    left: 15%;
+    text-align: center;
+    font-size: 28px;
+    animation-name: homePage_quatation_animation;
+    animation-duration: 2s;
+}
+
+@keyframes homePage_quatation_animation {
+    0% {
+
+        color: transparent;
+    }
+
+    50% {
+        color: transparent;
+    }
+
+    100% {
+
+        color: rgb(221, 49, 22);
+    }
+}
+
+.consult_btn_homeanim {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(100, 154, 199);
+    font-weight: 900;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    animation-name: consultbtn_animation_hp;
+    animation-duration: 3s;
+    margin: 20px;
+
+}
+
+@keyframes consultbtn_animation_hp {
+    0% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: rgb(100, 154, 199);
+    }
+}
+
+.part1_animations_homepage {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image1_animation_part1_hp {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes identifier {}
+
+.child_one {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    animation-name: slider_one;
+    animation-duration: 3s;
+    left: -400;
+    animation-fill-mode: forwards;
+}
+
+.child_two {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+
+    animation-name: slider_two;
+    animation-duration: 4s;
+    /* animation-delay: 1s; */
+    left: -800;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes slider_one {
+    0% {
+        left: -400;
+    }
+
+    100% {
+        left: 350;
+    }
+}
+
+@keyframes slider_two {
+    0% {
+        left: -800;
+    }
+
+    100% {
+        left: 50;
+    }
+}

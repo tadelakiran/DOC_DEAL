@@ -1,0 +1,252 @@
+* {
+
+    margin: 0;
+}
+
+
+.harsAllTopDoctors {
+    width: 100%;
+   /* height:fit-content; */
+   height: 100svh;
+    display: flex;
+    background: linear-gradient(to bottom, #f2f8ff, #a2d2ff);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.harshDoctor {
+    width: 60%;
+    /* height: 25%; */
+    height: fit-content;
+    border-radius: 20px;
+    border: 1px solid rgb(12, 0, 0);
+    background: linear-gradient(to top left, white, rgb(149, 169, 180));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 10px rgb(52, 133, 200);
+    transition: all 0.5s;
+    position: relative;
+}
+
+.harshDoctor:hover {
+    scale: 1.02;
+}
+
+.harshTopDoctors_heading {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32PX;
+    font-weight: 900;
+    font-family: cursive;
+    color: rgb(18, 111, 169);
+
+}
+
+.harshTopDoc_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    /* background-color: white; */
+}
+
+@media screen and (max-width:700px) {
+    .harshDoctor {
+        width: 90%;
+        align-items: start;
+    }
+
+    .hashTopDoc_image {
+        width: 150px;
+
+    }
+
+    .harshDoctor {
+        height: 20%;
+    }
+
+    .harshTopDoc_details p {
+        font-size: 12px;
+    }
+
+}
+
+.harshTopDoc_details {
+    width: 60%;
+    height: 85%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(108, 101, 101);
+    border-radius: 20px;
+    padding: 10px;
+    /* font-size: 15px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+
+}
+
+@media screen and (max-width:700px) {
+    .harshTopDoc_details {
+        height: 60%;
+
+    }
+
+    .rating_consult_div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+
+
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .harshTopDoc_details {
+        height: 60%;
+        font-size: 15px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+.harshDoc_speality {
+    color: rgb(14, 153, 212);
+}
+
+/* .harshDoc_rating{
+border: 1px solid black;
+width: 20%;
+height: 50%;
+
+justify-content: center;
+align-items: center;
+
+} */
+.div_2 {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.harshDoc_rating {
+    display: flex;
+    justify-content: start;
+    height: 40px;
+    width: 200px;
+}
+
+.rating_consult_div {
+    display: flex;
+    /* width: 150px; */
+    align-items: center;
+    justify-content: start;
+
+}
+
+.harshDoc_consult button {
+    background-color: rgb(123, 185, 211);
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-top: 15px; */
+}
+
+.harshDoc_consult button:hover {
+    scale: 1.09;
+}
+
+.harshDoc_rating {
+    color: rgb(6, 171, 6)
+}
+
+.harshTopDoctors_heading {
+    color: #387bbb
+}
+
+
+
+@media (max-width:770px) {
+    .harsAllTopDoctors
+    {
+        height: fit-content;
+    }
+    .harshDoctor
+    {
+        margin-top: 10px;
+    }
+    .harshDoc_consult button
+    {
+        width: 150px;
+        height: 35px;
+        margin-bottom: 10px;
+
+    }
+}
+
+.harsAllTopDoctors:hover .topDoctor1_harsh{
+animation-name: topDoctor1_animation;
+animation-duration: 2s;
+}
+
+@keyframes topDoctor1_animation {
+    0%{
+        bottom:-100%;
+
+        }
+        100%{
+        bottom:0;
+        }
+
+}
+.harsAllTopDoctors:hover .topDoctor2_harsh{
+    animation-name: topDoctor2_animation;
+    animation-duration: 2s;
+    }
+    
+    @keyframes topDoctor2_animation {
+        0%{
+        right:-100%;
+
+        }
+        100%{
+            right:0;
+        }
+    
+    }
+    .harsAllTopDoctors:hover .topDoctor3_harsh{
+        animation-name: topDoctor3_animation;
+        animation-duration: 2s;
+        }
+        
+        @keyframes topDoctor3_animation {
+            0%{
+            top:-100%;
+    
+            }
+            100%{
+                top:0;
+            }
+        
+        }

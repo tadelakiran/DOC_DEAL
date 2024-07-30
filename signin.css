@@ -114,6 +114,7 @@ body {
     width: 100%;
     border: 1px solid gray;
     outline: none;
+    padding-left: 5px;
 }
 
 .john1,

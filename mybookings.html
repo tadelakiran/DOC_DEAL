@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./mybookings.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,16 +14,15 @@
     <div id="s_nav">
         <div id="s_inner_nav">
           <div id="s_logo">
-            <div id="s_logo_icon"><i class="fa-solid fa-heart-pulse" style="color: #e60f0f;"></i></div>
+            <div id="s_logo_icon"><i class="fa-solid fa-heart-pulse" style="color: #e60f0f;"></i></div>&nbsp;
             <div id="s_logo_03">D</div>
             <div id="s_logo_02">oc eal</div>
           </div>
           <div id="s_options">
             <div id="home" onclick="home()">Home</div>
-            <!-- <div id="services">OurServices</div>
-            <div id="aboutUs">AboutUs</div> -->
+            <div class="options" onclick="window.location.href='services.html'">OurServices</div>
             <div id="mybooks">MyBookings</div>
-            <div id="profile"><i class="fa-solid fa-user" style="color: #a3a8a7;"></i></div>
+            <div id="profile"><img src="./user.png" onclick="window.location.href = 'Profile.html';"></div>
           </div>
           <div class="s_bars" onclick="fun1()">
             <i class="fa-solid fa-bars" class="s_lines"></i>
@@ -64,5 +63,6 @@
       }
     </script>
     <script src="./table.js"></script>
+    <script src="./options.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Doc Deal</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./FAQ.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -16,6 +16,8 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="./specalist.css">
   <link rel="stylesheet" href="./aboutUS.css">
+  <link rel="stylesheet" href="./topdoctors.css">
+  <link rel="stylesheet" href="./animation_home.css">
 </head>
 
 <body>
@@ -23,18 +25,18 @@
     <div id="s_nav">
       <div id="s_inner_nav">
         <div id="s_logo">
-          <div id="s_logo_icon"><i class="fa-solid fa-heart-pulse" style="color: #e60f0f;"></i></div>
+          <div id="s_logo_icon"><i class="fa-solid fa-heart-pulse" style="color: #e60f0f;"></i></div>&nbsp;
           <div id="s_logo_03">D</div>
           <div id="s_logo_02">oc eal</div>
         </div>
         <div id="s_options">
           <div id="home">Home</div>
-          <div id="services" onclick="services()">OurServices</div>
-          <div class="options">
+          <div id="services" onclick="window.location.href = 'services.html'">OurServices</div>
+          <div id="aboutUs">
             <a href="#aboutUs_main">About Us</a>
           </div>
           <div id="mybooks" onclick="mybookings()">MyBookings</div>
-          <div id="profile"><i class="fa-solid fa-user" style="color: #a3a8a7;"></i></div>
+          <div id="profile"><img src="./user.png" onclick="window.location.href = 'Profile.html'"></div>
         </div>
         <div class="s_bars" onclick="fun1()">
           <i class="fa-solid fa-bars" class="s_lines"></i>
@@ -42,21 +44,19 @@
         <div class="options_container">
           <div class="child">
             <div class="options">Home</div>
-            <div id="aboutUs">AboutUs</div>
+            <div class="options">AboutUs</div>
             <div class="options" onclick="services()">OurServices</div>
             <div class="options">MyBookings</div>
           </div>
         </div>
       </div>
     </div>
-    <div id="s_home">
-      <div id="s_home_11">
-        <div id="s_heading">
-          <div id="s_s_heading">Saving your life is part of our life</div>
-          <div id="s_title">Connect with India's Leading Doctors Online</div>
-          <!-- <button id="s_consult" id="openform">Consult Now</button> -->
-          <!-- <div id="s_consult" id="openform">Consult Now</div> -->
-          <button id="openForm">Consul Now</button>
+    <div id="animation_div_main">
+      <div class="animation_part1_main">
+        <div class="part1_headings_div">
+          <div class="mainheading_homepage">Connect with india's leading doctors</div>
+          <div class="quotation_homepage">Saving your LIFE is part of our LIFE</div>
+          <button id="openForm">Consult Now</button>
           <div id="popupForm" class="popup-form">
             <div class="popup-content">
               <span class="close-btn">&times;</span>
@@ -114,13 +114,40 @@
             </div>
           </div>
         </div>
+        <div class="part1_animations_homepage">
+          <div class="child_one">
+           </div>
+          <div class="child_two">
+           </div>
+        </div>
       </div>
-      <div id="s_home_22"></div>
+      <div class="animation_part2_main">
+        <div class="circlediv_part2">
+          <!-- <div class="names_animation name1_animine"><img width="100%" height="100%" src="https://img.freepik.com/premium-vector/vector-design-health-insurance-icon-style_1134108-21266.jpg?ga=GA1.1.1749788864.1700745080&semt=sph"></div>
+          <div class="names_animation name2_animine"><img width="100%" height="100%" src="https://img.freepik.com/premium-vector/vector-design-health-care-icon-style_822882-295878.jpg?ga=GA1.1.1749788864.1700745080&semt=sph" width="100%" height="100%"></div>
+          <div class="names_animation name3_animine"><img width="100%" height="100%" src="data:image/png;base64,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" alt=""></div>
+          <div class="names_animation name4_animine"><img width="100%" height="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-KPS90rbJCPzRL6F57f1Rnt1ax4Wo-URtMQ&s" alt=""></div> -->
+
+          <div class="names_animation name1_animine"><img width="100%" height="fit-content" src="./lab-coat.png">
+          </div>
+          <div class="names_animation name2_animine"><img width="100%" height="fit-content" src="./medical-checkup.png"
+              width="100%" height="100%"></div>
+          <div class="names_animation name3_animine"><img width="100%" height="fit-content" src="./medical-result.png"
+              alt=""></div>
+          <div class="names_animation name4_animine"><img width="100%" height="fit-content" src="./medicine.png" alt="">
+          </div>
+
+        </div>
+        <!-- <div class="picturediv_part2"><img src="https://img.freepik.com/free-vector/cartoon-healthcare-professionals-group_23-2148909561.jpg?ga=GA1.1.1749788864.1700745080&semt=sph" width="100%" height="100%"></div> -->
+        <div class="picturediv_part2"><img src="./SpecialityServices-removebg-preview.png" width="100%" height="100%"></div>
+      </div>
     </div>
+    <!-- <div id="s_home_22"></div> -->
+  </div>
   </div>
   <div class="harsAllTopDoctors">
     <div class="harshTopDoctors_heading">TOP DOCTORS</div>
-    <div class="harshDoctor">
+    <div class="harshDoctor topDoctor1_harsh">
       <div class="harshTopDoc_image"><img src="./vinaysagar.jpg" width="100%" height="100%"></div>
       <div class="div_2">
         <div class="harshTopDoc_details">
@@ -134,7 +161,7 @@
         </div>
       </div>
     </div>
-    <div class="harshDoctor">
+    <div class="harshDoctor topDoctor2_harsh">
       <div class="harshTopDoc_image"><img src="./suneeta.jpg" width="100%" height="100%"></div>
       <div class="div_2">
         <div class="harshTopDoc_details">
@@ -145,11 +172,11 @@
         </div>
         <div class="rating_consult_div">
           <!-- <div class="harshDoc_rating">Rating-*</div> -->
-          <div class="harshDoc_consult"  id="openForm2"><button>Consult</button></div>
+          <div class="harshDoc_consult" id="openForm2"><button>Consult</button></div>
         </div>
       </div>
     </div>
-    <div class="harshDoctor">
+    <div class="harshDoctor topDoctor3_harsh">
       <div class="harshTopDoc_image"><img src="./madhavi.png" width="100%" height="100%"> </div>
       <div class="div_2" id="suneeta_div">
         <div class="harshTopDoc_details">
@@ -160,11 +187,10 @@
         </div>
         <div class=" rating_consult_div">
           <!-- <div class="harshDoc_rating">Rating-*</div> -->
-          <div class="harshDoc_consult"  id="openForm3"><button>Consult</button></div>
+          <div class="harshDoc_consult" id="openForm3"><button>Consult</button></div>
         </div>
       </div>
     </div>
-
   </div>
   <div class="somi">
     <div class="somi1">
@@ -573,7 +599,7 @@
     $(document).ready(function () {
       $('.somi2').slick({
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
         variableWidth: true,
@@ -583,7 +609,7 @@
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 3,
             }
           },
           {
